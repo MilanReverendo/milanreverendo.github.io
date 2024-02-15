@@ -1,0 +1,114 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the body fills the viewport height */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Adjust color to match the navbar background */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: #f4f4f4;
+    flex-grow: 1; /* Allow the section to grow to fill the remaining space */
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    border: 5px solid #333; /* Border color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+}
+
+.welcome {
+    padding: 100px 20px; /* Adjust the padding as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-image: url('it.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white; /* Text color */
+    font-size: large;
+    
+}
+.about {
+    text-align: center;
+}
+.questions{
+    text-align: left;
+}
+.download {
+    text-align: center;
+}
+
+.download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px; /* Button border radius */
+    border: 2px solid #007bff; /* Button border color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download a:hover {
+    background-color: #0056b3; /* Button background color on hover */
+    color: #fff; /* Button text color on hover */
+}
+
+/* For small screens */
+.project img {
+    width: 100%; /* Ensure images fill the width of their container */
+    height: auto; /* Allow images to scale proportionally based on their width */
+    display: block; /* Ensure proper spacing between images and text */
+    margin: 0 auto; /* Center the images horizontally */
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+}
+
+/* For larger screens */
+@media screen and (min-width: 768px) {
+    .project img {
+        max-width: 80%; /* Limit image width to 80% of the container on larger screens */
+    }
+}
+#java {
+    max-width: 50%;
+}
